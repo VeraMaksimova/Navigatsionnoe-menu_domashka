@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navigation ul{
+    display: flex;
+    list-style:none;
+    justify-content: center;
+}
+
+
+.navigation li{
+    position: relative;
+    background-color: rgb(122, 165, 28);
+}
+
+
+.navigation a{
+    display: inline-block;
+    color: beige;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Pangolin', cursive;
+    font-size: 20px;
+    padding: 20px 20px;
+}
+
+
+.navigation a:hover{
+    background-color: rgb(154, 216, 22);
+}
+
+
+.navigation li > ul{
+    display: none;
+}
+
+
+.navigation li:hover > ul{
+    display: block;
+    position: absolute;
+    background-color: rgb(122, 165, 28);
+    white-space: nowrap;
+}
+
+
+.navigation li > ul a{
+    width: calc(100% - 40px);
+}
+
+
+.navigation li > ul  ul{
+    top:0;
+    left: 100%;
+}
